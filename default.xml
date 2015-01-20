@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- 2015 Team Triangles ROM Project based on CyanogenMod 12.0 Lolipop" -->
 <manifest>
 
   <remote  name="aosp"
@@ -19,9 +20,6 @@
 
   <remote name="triangles"
            fetch="https://github.com/Triangles/" />
-  
-  <remote name="cm"
-           fetch="https://github.com/CyanogenMod/" />
            
   <remote name="tm"
            fetch="https://github.com/TheMuppets/" />
