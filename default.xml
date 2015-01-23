@@ -13,7 +13,7 @@
   <remote  name="private"
            fetch="ssh://git@github.com" />
 
-  <default revision="refs/heads/cm-11.0"
+  <default revision="refs/heads/cm-12.0"
            remote="github"
            sync-c="true"
            sync-j="4" />
@@ -566,5 +566,5 @@
   <project path="tools/studio/translation" name="platform/tools/studio/translation" groups="notdefault,tools" remote="aosp" revision="refs/tags/android-5.0.2_r1" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" remote="aosp" revision="refs/tags/android-5.0.2_r1" />
     <!-- Vendor Sources  -->
-  <project path="vendor/cm" name="triangles_vendor" remote="triangles" revision="tta4.4" />
+  <project path="vendor/cm" name="triangles_vendor" remote="triangles" revision="tta3.0" />
 </manifest>
