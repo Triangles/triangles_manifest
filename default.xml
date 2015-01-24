@@ -28,7 +28,7 @@
     <copyfile src="build_triangle.sh" dest="build_triangle.sh" />
   </project>
     
-  <project path="build" name="android_build" remote="triangles" revision="cm-12.0" >
+  <project path="build" name="android_build" remote="triangles" revision="tta3.0" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
