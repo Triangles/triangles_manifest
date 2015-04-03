@@ -18,6 +18,9 @@
            remote="github"
            sync-c="true"
            sync-j="4" />
+  <project path="triangle" name="buildscripts" remote="triangles" revision="tta3.0" >
+    <copyfile src="build_triangle.sh" dest="build_triangle.sh" />
+  </project>
 
   <project path="build" name="Triangles/android_build" groups="pdk,tradefed" revision="tta3.0" >
     <copyfile src="core/root.mk" dest="Makefile" />
