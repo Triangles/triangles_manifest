@@ -17,7 +17,7 @@
   <remote  name="triangles"
            fetch="https://github.com/triangles" />
 
-  <default revision="refs/heads/cm-12.0"
+  <default revision="refs/heads/cm-12.1"
            remote="github"
            sync-c="true"
            sync-j="4" />
