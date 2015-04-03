@@ -19,7 +19,7 @@
            sync-c="true"
            sync-j="4" />
 
-  <project path="build" name="CyanogenMod/android_build" groups="pdk,tradefed" >
+  <project path="build" name="Triangles/android_build" groups="pdk,tradefed" revision="tta3.0" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
@@ -466,7 +466,7 @@
   <project path="packages/apps/PackageInstaller" name="CyanogenMod/android_packages_apps_PackageInstaller" />
   <project path="packages/apps/PhoneCommon" name="CyanogenMod/android_packages_apps_PhoneCommon" />
   <project path="packages/apps/Provision" name="CyanogenMod/android_packages_apps_Provision" />
-  <project path="packages/apps/Settings" name="CyanogenMod/android_packages_apps_Settings" />
+  <project path="packages/apps/Settings" name="Triangles/android_packages_apps_Settings" revision="tta3.0" />
   <project path="packages/apps/SetupWizard" name="CyanogenMod/android_packages_apps_SetupWizard" />
   <project path="packages/apps/SmartCardService" name="CyanogenMod/android_packages_apps_SmartCardService" />
   <project path="packages/apps/SoundRecorder" name="CyanogenMod/android_packages_apps_SoundRecorder" />
