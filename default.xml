@@ -9,6 +9,9 @@
   <remote  name="github"
            fetch=".."
            review="review.cyanogenmod.org" />
+		    
+	<remote  name="triangles"
+        fetch="https://github.com/triangles" />
 
   <remote  name="private"
            fetch="ssh://git@github.com" />
@@ -17,8 +20,12 @@
            remote="github"
            sync-c="true"
            sync-j="4" />
+		   
+	<project path="triangle" name="buildscripts" remote="triangles" revision="tta3.1" >
+		<copyfile src="build_triangle.sh" dest="build_triangle.sh" />
+	</project>
 
-  <project path="build" name="CyanogenMod/android_build" groups="pdk,tradefed" >
+  <project path="build" name="Triangles/android_build" groups="pdk,tradefed" revision="tta3.1" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
@@ -338,7 +345,7 @@
   <project path="external/zopfli" name="platform/external/zopfli" groups="pdk-cw-fs" remote="aosp" />
   <project path="external/zxing" name="platform/external/zxing" groups="pdk-cw-fs" remote="aosp" />
   <project path="frameworks/av" name="CyanogenMod/android_frameworks_av" groups="pdk" />
-  <project path="frameworks/base" name="CyanogenMod/android_frameworks_base" />
+  <project path="frameworks/base" name="Triangles/android_frameworks_base" revision="tta3.1"/>
   <project path="frameworks/compile/libbcc" name="CyanogenMod/android_frameworks_compile_libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="CyanogenMod/android_frameworks_compile_mclinker" groups="pdk" />
   <project path="frameworks/compile/slang" name="CyanogenMod/android_frameworks_compile_slang" groups="pdk" />
@@ -477,7 +484,7 @@
   <project path="packages/apps/PhoneCommon" name="CyanogenMod/android_packages_apps_PhoneCommon" />
   <project path="packages/apps/Profiles" name="CyanogenMod/android_packages_apps_Profiles" />
   <project path="packages/apps/Provision" name="CyanogenMod/android_packages_apps_Provision" />
-  <project path="packages/apps/Settings" name="CyanogenMod/android_packages_apps_Settings" />
+  <project path="packages/apps/Settings" name="Triangles/android_packages_apps_Settings" revision="tta3.1" />
   <project path="packages/apps/SetupWizard" name="CyanogenMod/android_packages_apps_SetupWizard" />
   <project path="packages/apps/SmartCardService" name="CyanogenMod/android_packages_apps_SmartCardService" />
   <project path="packages/apps/SoundRecorder" name="CyanogenMod/android_packages_apps_SoundRecorder" />
@@ -591,4 +598,5 @@
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" remote="aosp" />
   <project path="vendor/cm" name="CyanogenMod/android_vendor_cm" />
   <project path="vendor/cmsdk" name="CyanogenMod/cm_platform_sdk" />
+  <project path="vendor/cm" name="Triangles/triangles_vendor" revision="tta3.1" />
 </manifest>
