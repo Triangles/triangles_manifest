@@ -9,9 +9,9 @@
   <remote  name="github"
            fetch=".."
            review="review.cyanogenmod.org" />
-		    
-	<remote  name="triangles"
-        fetch="https://github.com/triangles" />
+  		    
+  <remote  name="triangles"
+           fetch="https://github.com/Triangles" />
 
   <remote  name="private"
            fetch="ssh://git@github.com" />
